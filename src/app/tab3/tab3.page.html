@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Infinite Scroll
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,5 +13,11 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div *ngFor="let item of items">
+    <ion-item>{{ item }}</ion-item>
+  </div>
+
+  <ion-infinite-scroll threshold="100px" (ionInfinite)="cargarMas($event)">
+    <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Loading more data..."></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
 </ion-content>
