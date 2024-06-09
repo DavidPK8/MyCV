@@ -7,19 +7,19 @@ Web: https://proyecto-bb77e.web.app/tabs/tab1
 
 # Como correr el Proyecto
 
-Instala ionic
+## Instala ionic
 npm i -g @ionic/cli 
 
-Clonar el repositorio
+## Clonar el repositorio
 https://github.com/DavidPK8/MyCV.git
 
-Ir al directorio de este proyecto
+## Ir al directorio de este proyecto
 cd CV
 
-nstala las dependencias
+## Instala las dependencias
 npm install
 
-Inicia el servidor
+## Inicia el servidor
 ionic serve
 
 # Capturas del Funcionamiento
